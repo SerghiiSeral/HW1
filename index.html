@@ -9,108 +9,121 @@
   </head>
   <body>
     <header>
-      <!--logo, web page content (flexbox)-->
-      <div>
-        <p class="logo1">WebStudio</p>
-      </div>
+      <a href="logo1">WebStudio</a>
 
       <nav class="flexBoxContainer-1">
-        <div class="box-1">
-          <p>Студія</p>
-        </div>
-        <div class="box-2">
-          <p>Портфоліо</p>
-        </div>
-        <div class="box-3"></div>
+        <ul>
+          <li><a href="pages" class="box-1">Студія</a></li>
+          <li><a href="pages" class="box-2">Портфоліо</a></li>
+          <li><a href="pages" class="box-3">Контакти</a></li>
+        </ul>
       </nav>
-      <p>Контакти</p>
-      <!--add to css [display: flex;] to make a flexbox-->
 
-      <div>
-        <!-- mail, telephone-->
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
 
-        <a href="tel:+380961111111">+38 0(96) 111 11 11</a>
-      </div>
+      <a href="tel:+380961111111">+38 0(96) 111 11 11</a>
     </header>
     <main>
       <section class="hero">
         <h1 class="someText">Ефективні рішення для вашого бізнесу</h1>
 
-        <p><input type="button" value="Замовити послугу" /></p>
+        <button name="button">Замовити послугу</button>
       </section>
 
-      <div class="details">
+      <section class="details">
         <ul>
           <li>
-            УВАГА ДО ДЕТАЛЕЙ Ідейні міркування, і навіть початок повсякденної роботи з формування
-            позиції.
+            <p class="title">УВАГА ДО ДЕТАЛЕЙ</p>
+            <p class="subtitle">
+              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+            </p>
           </li>
           <li>
-            ПУНКТУАЛЬНІСТЬ Завдання організації, особливо рамки і місце навчання кадрів тягне у
-            себе.
+            <p class="title">ПУНКТУАЛЬНІСТЬ</p>
+            <p class="subtitle">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+            </p>
           </li>
 
-          <li>ПЛАНУВАННЯ Так само консультація з широким активом значною мірою зумовлює.</li>
+          <li>
+            <p class="title">ПЛАНУВАННЯ</p>
+
+            <p class="subtitle">Так само консультація з широким активом значною мірою зумовлює.</p>
+          </li>
 
           <li>
-            СУЧАСНІ ТЕХНОЛОГІЇ Значимість цих проблем настільки очевидна, що реалізація планових
-            завдань.
+            <p class="title">СУЧАСНІ ТЕХНОЛОГІЇ</p>
+            <p class="subtitle">
+              Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+            </p>
           </li>
         </ul>
-      </div>
+      </section>
 
       <section class="work">
         <h2>Чим ми займаємось</h2>
-        <img src="./images/picture1.jpg" alt="programming" width="100px" />
-        <img src="./images/picture2.jpg" alt="mobileDesing" width="100px" />
-        <img src="./images/picture3.jpg" alt="colourDesing" width="100px" />
+        <ul>
+          <li>
+            <img src="./images/picture1.jpg" alt="programming" width="370" />
+          </li>
+          <li>
+            <img src="./images/picture2.jpg" alt="mobileDesing" width="370" />
+          </li>
+          <li>
+            <img src="./images/picture3.jpg" alt="colourDesing" width="370" />
+          </li>
+        </ul>
       </section>
 
       <section class="team">
         <h2>Наша команда</h2>
         <div class="cards">
-          <div class="card">
-            <img
-              src="./images/team/IhorDemyanenko_ProductDesinger.jpg"
-              alt="ProductDesinger"
-              width="100px"
-            />
-            <h4><b>Ігор Дем'яненко</b></h4>
-            <p>ProductDesinger</p>
-          </div>
-          <div class="card">
-            <img
-              src="./images/team/OlhaRepinaFrontEnd.jpg"
-              alt="FrontEnd developer"
-              width="100px"
-            />
-            <h4><b>Ольга Репіна</b></h4>
-            <p>FrontEnd developer</p>
-          </div>
-
-          <div class="card">
-            <img src="./images/team/MikolaTarasovmarketing.jpg" alt="Marketing" width="100px" />
-            <h4><b>Микола Тарасов</b></h4>
-            <p>Marketing</p>
-          </div>
-          <div class="card">
-            <img src="./images/team/MikhailErmakovUI.jpg" alt="UI/UX" width="100px" />
-            <h4><b>Михайло Єрмаков</b></h4>
-            <p>UI Designer</p>
-          </div>
+          <ul>
+            <li>
+              <div class="card">
+                <img src="./images/team/ProductDesinger.jpg" alt="ProductDesinger" width="270" />
+                <!--fixed-->
+                <h4><b>Ігор Дем'яненко</b></h4>
+                <p>ProductDesinger</p>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img src="./images/team/FrontEnd.jpg" alt="FrontEnd developer" width="270" />
+                <!--fixed-->
+                <h4><b>Ольга Репіна</b></h4>
+                <p>FrontEnd developer</p>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img src="./images/team/Marketing.jpg" alt="Marketing" width="270" />
+                <!--fixed-->
+                <h4><b>Микола Тарасов</b></h4>
+                <p>Marketing</p>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img src="./images/team/UI.jpg" alt="UI/UX" width="270" />
+                <!--fixed-->
+                <h4><b>Михайло Єрмаков</b></h4>
+                <p>UI Designer</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
     <footer>
-      <!--доделать-->
+      <a href="logo2">WebStudio</a>
+      <address>
+        <a href="https://goo.gl/maps/Z4iLJCYcAJxJQqzbA" target="_blank" rel="noopener noreferrer"
+          >м. Київ, пр-т Лесі Українки, 26</a
+        >
+        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a href="tel:+380961111111">+38 0(96) 111 11 11</a>
+      </address>
     </footer>
-    <div>
-      <p class="logo2">WebStudio</p>
-    </div>
-    <div class="adress">м. Київ, пр-т Лесі Українки, 26</div>
-    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-
-    <a href="tel:+380961111111">+38 0(96) 111 11 11</a>
   </body>
 </html>
